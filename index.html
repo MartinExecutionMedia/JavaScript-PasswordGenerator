@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+        <h1>Passwort Generator</h1>
+        <div class="generation-area">
+            <h2 id="output"></h2>
+        </div>
+        <div class="range-container">
+            <input type="range" min="1" max="30" value="15" id="characteramount">
+            <h3 id="range-value"></h3>
+        </div>
+        <div class="button-box">
+            <button onclick="generatePassword()">Generieren</button>
+        </div>
+        <label class="checkbox"><input id="checkbox" type="checkbox"> Sonderzeichen generieren</label>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
